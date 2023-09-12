@@ -1,0 +1,65 @@
+$btn-padding: 0 20px;
+$btn-padding-small: 0 16px;
+
+.btn {
+	height: 48px;
+	min-height: 48px;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	padding: $btn-padding;
+
+	background-color: $blue300;
+	border: none;
+	outline: none;
+
+	border-radius: $radius-normal;
+	cursor: pointer;
+
+	transition: 0.2s ease;
+
+	&:hover {
+		background-color: lighten($blue300, 4);
+	}
+
+	&_mw100 {
+		justify-content: center;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	&_small {
+		padding: $btn-padding-small;
+		height: 40px;
+	}
+	&.white {
+		background-color: #fff;
+		border: 1px solid $grd300;
+
+		&:hover {
+			background-color: #fff;
+			border: 1px solid darken($grd300, 26);
+		}
+	}
+
+	&.gray {
+		background-color: $grd200;
+		border: 1px solid $grd300;
+
+		&:hover {
+			background-color: $grd200;
+			border: 1px solid darken($grd300, 26);
+		}
+	}
+}
+
+.btns {
+	@media (max-width: $mobile) {
+		flex-wrap: wrap;
+		.btn {
+			width: 100%;
+			justify-content: center;
+			max-width: 100%;
+		}
+	}
+}

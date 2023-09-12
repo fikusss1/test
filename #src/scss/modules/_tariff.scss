@@ -1,0 +1,30 @@
+.tariff-page {
+	&__cards {
+		background-color: #fff;
+	}
+}
+
+.tariff-payment {
+	padding-top: 80px;
+
+	&__other {
+		background-color: $grd200;
+		padding: 40px;
+	}
+
+	&__label {
+		width: 100%;
+		max-width: 410px;
+	}
+
+	@media (max-width: $tablet) {
+		&__label {
+			width: 100%;
+			max-width: 100%;
+		}
+		&__inputs {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+	}
+}

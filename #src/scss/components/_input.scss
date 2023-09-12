@@ -1,0 +1,21 @@
+.input {
+	height: 48px;
+	background-color: #fff;
+
+	display: flex;
+	align-items: center;
+
+	padding: 0px 12px;
+
+	border-radius: $radius-small;
+
+	@include text;
+	color: $grd400;
+
+	&::placeholder {
+		color: $grd300;
+	}
+	&.bg-gray {
+		background-color: $grd200;
+	}
+}

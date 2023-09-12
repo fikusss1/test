@@ -1,0 +1,35 @@
+.slider-hero {
+	height: 320px;
+
+	@media (max-width: $tablet) {
+		height: auto;
+		min-height: 240px;
+	}
+
+	&__wrapper {
+		height: inherit;
+	}
+}
+
+.slider-hero-slide {
+	max-width: 100%;
+	background-size: cover;
+	height: auto;
+
+	padding: 73px 40px 40px 40px;
+
+	@media (max-width: $tablet) {
+		padding: 43px 20px 40px 20px;
+	}
+
+	&__content {
+		width: auto;
+		max-width: 592px;
+		row-gap: 63px;
+
+		@media (max-width: $tablet) {
+			max-width: 90vw;
+			row-gap: 40px;
+		}
+	}
+}

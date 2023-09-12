@@ -1,0 +1,53 @@
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.nav {
+	ul.nav__list {
+		row-gap: 6px;
+		max-width: 500px;
+	}
+	&__phone {
+		display: none;
+	}
+
+	@media (max-width: $tablet) {
+		position: absolute;
+		display: none;
+
+		&.open {
+			flex-direction: column;
+			animation: opacity 0.3s ease;
+			background-color: #fff;
+			top: 88px;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			height: calc(100vh - 88px);
+			display: flex;
+
+			align-items: center;
+			justify-content: center;
+
+			.nav {
+				&__phone {
+					display: block;
+					margin-top: auto;
+					margin-bottom: 40px;
+				}
+
+				&__list {
+					margin-top: auto;
+					text-align: center;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}

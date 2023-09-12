@@ -1,0 +1,31 @@
+$font: 'Inter',
+sans-serif;
+$grd200: #F4F4F6;
+$grd300: #A0A0A7;
+$grd400: #4E4E55;
+$grd500: #101018;
+$blue100: #E7E9F8;
+$blue300: #4760FF;
+
+$radius-small: 2px;
+$radius-normal: 4px;
+$radius-big: 6px;
+
+@mixin text {
+	transition: 0.2s ease;
+	font-family: $font;
+	font-size: 16px;
+	@media (max-width: $container) {
+		font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1313 - 320)));
+	}
+	font-weight: 400;
+	color: $grd400;
+	line-height: 150%;
+}
+
+$container: 1312px;
+$prm1: 1239.99px;
+$prm2: 1019.99px;
+$pre-tablet: 989.99px;
+$tablet: 767.99px;
+$mobile: 479.99px

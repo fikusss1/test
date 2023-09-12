@@ -1,0 +1,38 @@
+.take-gift {
+	background-color: $grd200;
+	min-height: 480px;
+
+	@media (max-width: $tablet) {
+		padding: 40px 0;
+	}
+
+	&__offer {
+		max-width: 628px;
+	}
+
+	&__container {
+		@media (max-width: $tablet) {
+			flex-direction: column-reverse;
+			justify-content: start;
+		}
+	}
+
+	&__img {
+		@media (max-width: $tablet) {
+			width: 100%;
+			max-width: calc(250px + (350 - 250) * ((100vw - 320px) / (768 - 320)));
+		}
+	}
+
+	&__input {
+		@media (max-width: $mobile) {
+			max-width: 160px;
+		}
+	}
+
+	&__form-group {
+		@media (max-width: $mobile) {
+			gap: 6px;
+		}
+	}
+}

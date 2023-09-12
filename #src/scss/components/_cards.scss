@@ -1,0 +1,62 @@
+.cards {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background-color: $grd200;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		gap: 40px;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__list {
+		display: flex;
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+}
+
+.card {
+	width: 100%;
+	max-width: 410px;
+	background-color: #fff;
+	border-radius: $radius-big;
+	padding: 24px;
+
+	display: flex;
+	flex-direction: column;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		flex: 1 1 auto;
+	}
+
+	&__img {
+		width: 64px;
+		height: 64px;
+		border-radius: 4px;
+	}
+
+	&__btn {
+		margin-top: 76px;
+		@media (max-width: $container) {
+			margin-top: calc(36px + (76 - 36) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&_with-border {
+		border: 1px solid $grd200;
+	}
+
+	@media (max-width: $tablet) {
+		max-width: 100%;
+	}
+}

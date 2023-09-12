@@ -1,0 +1,36 @@
+.details {
+	padding: 80px 0;
+
+	&__body {
+		padding: 40px;
+		background-color: $grd200;
+		border-radius: 8px;
+	}
+
+	&__list {
+		@media (max-width: $pre-tablet) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.detail {
+	border-radius: 6px;
+	background: #fff;
+
+	max-width: 371px;
+	width: 100%;
+
+	padding: 24px;
+
+	&__icon {
+		margin-top: -1px;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+	}
+	@media (max-width: $tablet) {
+		max-width: 100%;
+	}
+}

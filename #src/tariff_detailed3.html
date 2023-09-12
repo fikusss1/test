@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Загородный дом</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main">
+                <section class="details">
+                    <div class="container">
+                        <div class="details__body flex flex_vertical gap-40">
+                            <h3 class="title">Загородный дом</h3>
+                            <div class="details__list flex gap-24">
+                                <div class="detail">
+                                    <p class="detail__text text text_small">Скорость интернета:</p>
+                                    <div class="flex gap-4 flex_acenter">
+                                        <img src="img/icons/icons.svg#limit" alt="limitka" class="detail__icon icon icon_big">
+                                        <h4 class="title">
+                                            <span class="color_blue">200 Мбит</span>
+                                            /сек
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="detail__text text text_small">Аренда 5Ghz роутера:</p>
+                                    <div class="flex gap-4 flex_acenter">
+                                        <h4 class="title">
+                                            <span class="color_blue">50 руб</span>
+                                            /мес
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="detail__text text text_small">Стоимость тарифа:</p>
+                                    <h4 class="title">
+                                        <span class="color_blue">500 руб</span>
+                                        /мес
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="container flex flex_vertical gap-40">
+                        <div class="flex flex_vertical gap-12">
+                            <h4 class="title">Описание тарифа</h4>
+                            <p class="text text_body">Тариф «Игровой» включает в себя безлимитный Домашний Интернет на скорости 100 мегабит в секунду и игровые бонусы. На первые два месяца предоставляется скидка 50%. Оплата производится на лицевой счет в течение 3х дней с момента подключения – 445 рублей по тарифу. С 3-го месяца цена возрастает до 890 рублей и не увеличивается со временем.</p>
+                        </div>
+                        <a href="tariff_payment3.html" class="btn self-start">
+                            <span class="span span_bold color_white">Подключить тариф</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="additional">
+                    <div class="container flex flex_vertical gap-24">
+                        <h4 class="title">Дополнительные услуги</h4>
+                        <div class="additional__list flex gap-24">
+                            <div class="additional-card flex flex_vertical gap-24">
+                                <div class="flex flex_vertical gap-12">
+                                    <div class="flex flex_acenter gap-8">
+                                        <img src="img/icons/icons.svg#globus" alt="Ускоренный серфинг, getInternt, доп. услуги" class="icon icon_40">
+                                        <p class="text text_headline">Ускоренный серфинг</p>
+                                    </div>
+                                    <h4 class="title"><span class="color_blue">30 руб</span>/мес</h4>
+                                </div>
+                                <button class="additional-card__btn btn btn_small self-start">
+                                    <span class="span span_bold color_white">Подключить услугу</span>
+                                </button>
+                            </div>
+                            <div class="additional-card flex flex_vertical gap-24">
+                                <div class="flex flex_vertical gap-12">
+                                    <div class="flex flex_acenter gap-8">
+                                        <img src="img/icons/icons.svg#disc" alt="1 тб облачного хранилища, getInternt, доп. услуги" class="icon icon_40">
+                                        <p class="text text_headline">1 тб облачного хранилища</p>
+                                    </div>
+                                    <h4 class="title"><span class="color_blue">800 руб</span>/год</h4>
+                                </div>
+                                <button class="additional-card__btn btn btn_small self-start">
+                                    <span class="span span_bold color_white">Подключить услугу</span>
+                                </button>
+                            </div>
+                            <div class="additional-card flex flex_vertical gap-24">
+                                <div class="flex flex_vertical gap-12">
+                                    <div class="flex flex_acenter gap-8">
+                                        <img src="img/icons/icons.svg#mail" alt="Персонализированная почта, getInternt, доп. услуги" class="icon icon_40">
+                                        <p class="text text_headline">Персонализированная почта</p>
+                                    </div>
+                                    <h4 class="title"><span class="color_blue">30 руб</span>/мес</h4>
+                                </div>
+                                <button class="additional-card__btn btn btn_small self-start">
+                                    <span class="span span_bold color_white">Подключить услугу</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./modules/_footer.html')
+        </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

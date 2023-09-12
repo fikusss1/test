@@ -1,0 +1,13 @@
+.contacts {
+	padding-top: 80px;
+
+	&__title {
+		color: $grd300;
+		font-size: 72px;
+		word-wrap: break-word;
+
+		@media (max-width: $container) {
+			font-size: calc(26px + (72 - 26) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+}

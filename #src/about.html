@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>О компании</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main about-company">
+                <section class="about">
+                    <div class="about__container container flex gap-24 flex_acenter">
+                        <div class="content">
+                            <div class="content__block flex gap-24">
+                                <div class="self-end about__text-block flex flex_vertical gap-12">
+                                    <h3 class="title">О компании</h3>
+                                    <p class="text text_body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                                        <br>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                                    </p>
+                                </div>
+                                <img src="img/about1.png" alt="Программист">
+                            </div>
+                            <div class="content__block flex gap-24 flex_row-reverse">
+                                <div class="self-start about__text-block about__text-block_reverse flex flex_vertical gap-12">
+                                    <h3 class="title">Как мы работаем</h3>
+                                    <p class="text text_body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                                        <br>
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                                    </p>
+                                </div>
+                                <img src="img/about3.png" alt="Программист">
+                            </div>
+                        </div>
+                        <img class="about-company__img" src="img/about2.png" alt="GetInternet изображение">
+                    </div>
+                </section>
+                <section class="clients">
+                    <div class="flex flex_vertical gap-24">
+                        <div class="container">
+                            <h3 class="title">Наши клиенты</h3>
+                        </div>
+                        <div class="clients-list">
+                            <div class="container flex flex_between gap-24 flex_jcenter wrap">
+                                <!-- Поменяй эти блоки на img, но класс оставь (Только класс) -->
+                                <div class="clients-list__item" style="background-color: #ffffff;"></div>
+                                <div class="clients-list__item" style="background-color: #ffffff;"></div>
+                                <div class="clients-list__item" style="background-color: #ffffff;"></div>
+                                <div class="clients-list__item" style="background-color: #ffffff;"></div>
+                                <div class="clients-list__item" style="background-color: #ffffff;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-us">
+                    <div class="contact-us__container container flex flex_between gap-40">
+                        <div class="how-contact flex flex_vertical">
+                            <h4 class="title">Как с нами связаться?</h4>
+                            <p class="text text_body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem tortor, pellentesque porttitor odio ornare lectus nec. Est nam ultricies sed venenatis viverra enim. Dictum pretium senectus eget ultrices arcu, at lectus. Vitae id vitae leo elit aliquet integer in.
+                            </p>
+                        </div>
+                        <div class="contact-us__columns flex gap-24">
+                            <div class="contact-us__column flex flex_vertical gap-12">
+                                <h4 class="title">Наш адрес</h4>
+                                <div class="flex gap-4">
+                                    <img src="img/icons/icons.svg#send" alt="Наш адрес" class="icon icon_medium">
+                                    <div class="flex flex_vertical gap-12">
+                                        <p class="text text_body">Россия, Улица Пушкина, дом Калатушкина</p>
+                                        <a href="#" class="span link color_blue">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-us__column flex flex_vertical gap-12">
+                                <h4 class="title">Способы связи</h4>
+                                <a href="tel: +79169999999" class="flex gap-4">
+                                    <img src="img/icons/icons.svg#mobile" alt="Наш адрес" class="icon icon_medium">
+                                    <p class="text text_body">+7 916 999 99 99</p>
+                                </a>
+                                <a href="mailto: getInternet@gmail.com" class="flex gap-4">
+                                    <img src="img/icons/icons.svg#mail2" alt="Наш адрес" class="icon icon_medium">
+                                    <p class="text text_body">GetInternet@gmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./modules/_footer.html')
+        </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

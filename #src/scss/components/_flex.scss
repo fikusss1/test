@@ -1,0 +1,96 @@
+.flex {
+	display: flex;
+
+	&_between {
+		justify-content: space-between;
+	}
+
+	&_jcenter {
+		justify-content: center;
+	}
+
+	&_jend {
+		justify-content: end;
+	}
+
+	&_acenter {
+		align-items: center;
+	}
+	&_aend {
+		align-items: end;
+	}
+
+	&_center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&_vertical {
+		flex-direction: column;
+	}
+
+	&_inline {
+		display: inline-flex;
+	}
+
+	&_grow {
+		flex: 1 1 auto;
+	}
+	&_row-reverse {
+		flex-direction: row-reverse;
+	}
+}
+
+.gap {
+	&-40 {
+		gap: 40px;
+		@media (max-width: $container) {
+			gap: calc(29px + (40 - 29) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&-24 {
+		gap: 24px;
+		@media (max-width: $container) {
+			gap: calc(16px + (24 - 16) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&-16 {
+		gap: 16px;
+
+		@media (max-width: $container) {
+			gap: calc(12px + (16 - 12) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&-12 {
+		gap: 12px;
+		@media (max-width: $container) {
+			gap: calc(6px + (12 - 6) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&-8 {
+		gap: 8px;
+		@media (max-width: $container) {
+			gap: calc(6px + (8 - 6) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+	&-4 {
+		gap: 4px;
+		@media (max-width: $container) {
+			gap: calc(3px + (4 - 3) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+}
+
+.self-start {
+	align-self: start;
+	justify-self: start;
+}
+
+.self-end {
+	align-self: flex-end;
+	justify-self: flex-end;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}

@@ -1,0 +1,23 @@
+.contact-us {
+	padding-top: 72px;
+	&__column {
+		min-width: 200px;
+		width: 100%;
+		max-width: 309px;
+	}
+	&__container {
+		@media (max-width: 540px) {
+			flex-direction: column;
+			
+		}
+	}
+	&__columns {
+		@media (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
+}
+.how-contact {
+	gap: 18px;
+	max-width: 409px;
+}

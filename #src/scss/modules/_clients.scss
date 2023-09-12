@@ -1,0 +1,13 @@
+.clients-list {
+	padding: 91px 0;
+	background-color: $grd200;
+
+	&__item {
+		width: 220px;
+		height: 220px;
+		@media (max-width: $container) {
+			width: calc(140px + (220 - 140) * ((100vw - 320px) / (1313 - 320)));
+			height: calc(140px + (220 - 140) * ((100vw - 320px) / (1313 - 320)));
+		}
+	}
+}

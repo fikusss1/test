@@ -1,0 +1,22 @@
+.list {
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+		position: relative;
+		padding-left: 26px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			background-color: $grd400;
+			border-radius: 50%;
+
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

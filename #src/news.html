@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Новости</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main news-page">
+                <section class="news">
+                    <div class="container flex flex_vertical gap-40">
+                        <h3 class="title">Последние новости</h3>
+                        <div class="flex flex_jcenter gap-24 wrap">
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                            <a href="article.html" class="news-card">
+                                <img src="img/router.png" alt="Картинка к новости" class="news-card__img">
+                                <div class="news-card__content">
+                                    <p class="text text_small">00.00.0000</p>
+                                    <h4 class="news-card__title title">Большой и объемный заголовок</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex flex_jcenter">
+                            <button class="news-page__btn btn self-start"><span class="span span_bold color_white">Загрузить больше</span></button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./modules/_footer.html')
+        </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

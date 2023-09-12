@@ -1,0 +1,9 @@
+.additional {
+	padding: 40px 0 46px 0;
+	background-color: $grd200;
+	&__list {
+		@media (max-width: $pre-tablet) {
+			flex-wrap: wrap;
+		}
+	}
+}

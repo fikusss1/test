@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Контакты</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main">
+                <section class="contacts">
+                    <div class="container flex flex_vertical gap-40">
+                        <div class="flex flex_vertical gap-16">
+                            <p class="text text_body">Номер горячей линии:</p>
+                            <a href="tel: +79169999999" class="title contacts__title"><span class="color_blue">+7 916 999 99 99</span></a>
+                        </div>
+                        <div class="flex flex_vertical gap-16">
+                            <p class="text text_body">Почта для связи:</p>
+                            <a href="mailto: getInternet@gmail.com" class="title color_blue contacts__title"><span class="color_blue">GetInternet@gmail.com</span></a>
+                        </div>
+                        <div class="flex flex_vertical gap-16">
+                            <p class="text text_body">Наш офис:</p>
+                            <a href="#" class="title contacts__title">
+                                8:00-20:00
+                                <br>
+                                <span class="color_blue">
+                                    Смотреть на карте
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./modules/_footer.html')
+        </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

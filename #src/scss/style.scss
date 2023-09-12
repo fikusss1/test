@@ -1,0 +1,72 @@
+@import "fonts";
+@import "vars";
+@import "_reset";
+
+.block-scroll {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.wrapper {
+	padding-top: 88px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	flex: 1 1 auto;
+	padding-bottom: 120px;
+}
+.container {
+	width: 100%;
+	max-width: $container;
+	padding: 0 16px;
+	margin: 0 auto;
+	min-height: inherit;
+	height: inherit;
+
+	&_fluid {
+		max-width: 1440px;
+	}
+}
+// COMPONENTS
+@import "./components/btn";
+@import "./components/cards";
+@import "./components/link";
+@import "./components/list";
+@import "./components/text";
+@import "./components/flex";
+@import "./components/nav";
+@import "./components/logo";
+@import "./components/icon";
+@import "./components/color";
+@import "./components/border";
+@import "./components/news-card";
+@import "./components/input";
+@import "./components/accordion";
+@import "./components/additional-card";
+@import "./components/burger";
+@import "./components/modal";
+
+// COMPONENTS FROM MODULES
+@import "./modules/home/slider-hero";
+@import "./modules/tariff/faq";
+@import "./modules/tariff/details";
+@import "./modules/tariff/additional";
+@import "./modules/tariff/description";
+
+// MODULES
+@import "./modules/header";
+@import "./modules/footer";
+@import "./modules/hero";
+@import "./modules/news";
+@import "./modules/take-gift";
+@import "./modules/tariff";
+@import "./modules/about";
+@import "./modules/clients";
+@import "./modules/contact-us";
+@import "./modules/news-page";
+@import "./modules/article";
+@import "./modules/contacts";
+@import "./modules/auth";

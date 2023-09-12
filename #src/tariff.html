@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css"></link>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Тарифный план</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main tariff-page">
+                <section class="tariff-page__cards cards">
+                    <div class="container cards__container">
+                        <h3 class="title">
+                            Наши тарифы
+                        </h3>
+                        <div class="cards__list flex_jcenter">
+                            <div class="card card_with-border">
+                                <div class="card__content">
+                                    <img src="img/speed.svg" alt="Особая скорость" class="card__img">
+                                    <h4 class="title">Особая скорость</h4>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Высокоскоростной интернет
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Новейший роутер от компании
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Бесплатное подключение
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Интерактивное телевидение
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="tariff_detailed1.html" class="card__btn btn btn_mw100">
+                                    <span class="color_white span span_bold">
+                                        Смотреть подробнее
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="card card_with-border">
+                                <div class="card__content">
+                                    <img src="img/controller.svg" alt="Для хороших каток" class="card__img">
+                                    <h4 class="title">Для хороших каток</h4>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Высокоскоростной интернет
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Самый низкий пинг
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Бесплатное подключение
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="tariff_detailed2.html" class="card__btn btn btn_mw100">
+                                    <span class="color_white span span_bold">
+                                        Смотреть подробнее
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="card card_with-border">
+                                <div class="card__content">
+                                    <img src="img/home.svg" alt="Загородный дом" class="card__img">
+                                    <h4 class="title">Загородный дом</h4>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Высокоскоростной интернет
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Самый низкий пинг
+                                            </span>
+                                        </li>
+                                        <li class="list__item">
+                                            <span class="text">
+                                                Бесплатное подключение
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="tariff_detailed3.html" class="card__btn btn btn_mw100">
+                                    <span class="color_white span span_bold">
+                                        Смотреть подробнее
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="container">
+                        <h3 class="faq__title title">Часто задаваемые вопросы</h3>
+                        <div class="faq__accordion-container accordion-container flex flex_vertical gap-12">
+                            <div class="accordion">
+                                <div class="flex flex_acenter gap-4 ac-trigger">
+                                    <p class="accordion__headline text text_headline">
+                                        Как провести домашний интернет
+                                    </p>
+                                    <img src="img/icons/icons.svg#arrow_down" alt="Стрелочка вниз на аккордионе" class="accordion__icon icon icon_normal">
+                                </div>
+                                <div class="accordion__panel">
+                                    <p class="text text_body">
+                                        Процедура максимально проста:
+                                        <br>
+                                        <br>
+                                        1. Позвоните по номеру подключения 899-999-999-99
+                                        <br>
+                                        2. Укажите адрес, удобное время, когда мастер может прийти для подключения
+                                        <br>
+                                        3. В выбранный день, после предварительного звонка мастер приедет и подключит услуги.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="flex flex_acenter gap-4 ac-trigger">
+                                    <p class="accordion__headline text text_headline">
+                                        Как понять, какая скорость интернета мне нужна?
+                                    </p>
+                                    <img src="img/icons/icons.svg#arrow_down" alt="Стрелочка вниз на аккордионе" class="accordion__icon icon icon_normal">
+                                </div>
+                                <div class="accordion__panel">
+                                    <p class="text text_body">
+                                        Чтобы выбрать подходящую скорость, ответьте на три вопроса:<br><br>
+1. Для каких целей мне нужен интернет: общение в соцсетях, просмотр фильмов и роликов, онлайн-игры?<br>
+2. Сколько подключенных к интернету устройств будут работать одновременно: ноутбук, стационарный компьютер, смартфон?<br>
+3. Буду ли я использовать устройства для одинаковых или разных целей?<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./modules/_footer.html')
+        </div>
+        <script src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Контакты</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('./modules/_header.html')
+            <main class="main auth flex flex_vertical">
+                <div class="container flex_grow flex flex_center">
+                    <form class="modal">
+                        <div class="content-tab" id="auth">
+                            <h3 class="title auth__title">Вход</h3>
+                            <div class="flex flex_vertical gap-16">
+                                <label class=" flex flex_vertical gap-12">
+                                    <span class="text">Ваша почта:</span>
+                                    <input
+                                        type="email"
+                                        name="login"
+                                        class=" input"
+                                        placeholder="e-mail"
+                                    >
+                                </label>
+                                <label class=" flex flex_vertical gap-12">
+                                    <span class="text">Пароль</span>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        class=" input"
+                                        placeholder="Пароль"
+                                    >
+                                </label>
+                            </div>
+                            <a href="#" class="auth__link link">
+                                <span class="span color_blue">Забыли пароль?</span>
+                            </a>
+                        </div>
+                        <div class="content-tab" id="register">
+                            <h3 class="title auth__title">Регистрация</h3>
+                            <div class="flex flex_vertical gap-16">
+                                <label class=" flex flex_vertical gap-12">
+                                    <span class="text">Ваш лицевой счет:</span>
+                                    <input
+                                        type="text"
+                                        name="card"
+                                        class=" input"
+                                        placeholder="0000 0000 0000 0000 0000"
+                                    >
+                                </label>
+                                <label class=" flex flex_vertical gap-12">
+                                    <span class="text">Ваша почта:</span>
+                                    <input
+                                        type="email"
+                                        name="login"
+                                        class=" input"
+                                        placeholder="E-mail"
+                                    >
+                                </label>
+                                <label class=" flex flex_vertical gap-12">
+                                    <span class="text">Придумайте пароль:</span>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        class=" input"
+                                        placeholder="Пароль"
+                                    >
+                                </label>
+                            </div>
+                            <a href="#" class="auth__link link">
+                                <span class="span color_blue">Забыли пароль?</span>
+                            </a>
+                        </div>
+                        <div data-tabs class="auth__tabs btns flex gap-16">
+                            <a href="#auth" class="btn">
+                                <span class="span span_bold color_white">Войти</span>
+                            </a>
+                            <a href="#register" class="btn gray">
+                                <span class="span span_bold">Зарегистрироваться</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

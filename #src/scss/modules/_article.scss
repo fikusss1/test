@@ -1,0 +1,14 @@
+.article {
+	padding-top: 80px;
+}
+
+.img-bg {
+	min-height: 433px;
+	padding-top: 80px;
+	background-color: $blue100;
+
+	&__img {
+		height: 353px;
+		object-fit: cover;
+	}
+}
